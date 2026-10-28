@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TaxCalculator - 15 to 20</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.
+<body>
+
+    <h2><body>
+    <div>
+        <div>
+            <form id="tax_form">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Basic Salary</label>
+                    <input type="number" class="form-control" id="basic" aria-describedby="emailHelp">
+
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Benefits</label>
+                    <input type="number" class="form-control" id="benefits">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+
+        <div>
+            <table class="table">
+                <thead>
+                    <tr>           
+                        <th scope="col">Tax Category</th>
+                        <th scope="col">Tax Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gross Salary</td>
+                        <td id="gross"></td>
+                    </tr>
+                    <tr>
+                        <td>NHIF</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>NSSF</td>
+                        <td></td>
+                    </tr>
+                     <tr>
+                        <td>NHDF</td>
+                        <td></td>
+                    </tr>
+                     <tr>
+                        <td>Taxable Income</td>
+                        <td></td>
+                    </tr>
+                       <tr>
+                        <td>Payee</td>
+                        <td></td>
+                    </tr>
+                       <tr>
+                        <td>Net Salary</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>Kenya Tax Calculator (Tasks 15-20)</h2>
+    Basic Salary: <input type="number" id="basic" value="50000"><br><br>
+    Benefits: <input type="number" id="benefits" value="10000"><br><br>
+
+    <button onclick="question15()">15: NHIF</button>
+    <button onclick="question16()">16: NSSF</button>
+    <button onclick="question17()">17: NHDF</button>
+    <button onclick="question18()">18: Taxable</button>
+    <button onclick="question19()">19: PAYEE</button>
+    <button onclick="question20()">20: NET SALARY (Final)</button>
+
+    <h3 id="result">Result will show here</h3>
+
+    <script src="tax.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+></script>
+</body>
+</html>
