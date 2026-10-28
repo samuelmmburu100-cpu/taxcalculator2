@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div>
+        <form id="tax_form">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Basic Salary</label>
+                <input type="number" class="form-control" id="basic" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Benefits</label>
+                <input type="number" class="form-control" id="benefits">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <div>
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Tax Category</th>
+      <th scope="col">Tax Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gross Salary</td>
+      <td id="gross"></td>
+    </tr>
+    <tr>
+      <td>NHIF</td>
+      <td id="nhif"></td>
+    </tr>
+    <tr>
+      <td>NSSF</td>
+      <td id="nssf"></td>
+    </tr>
+    <tr>
+      <td>NHDF</td>
+      <td id="nhdf"></td>
+    </tr>
+    <tr>
+      <td>Taxable Income</td>
+      <td id="taxable income"></td>
+    </tr>
+    <tr>
+      <td>Payee</td>
+      <td id="payee"></td>
+    </tr>
+    <tr>
+      <td>Net Salary</td>
+      <td id="net salary"></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+
+    <script src="tax.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
