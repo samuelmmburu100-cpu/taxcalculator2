@@ -1,0 +1,33 @@
+modularity -> making a large program smaller and more manageable
+
+2^32
+
+form input
+
+--> JS has 2 core purposes:
+
+User interactivity -> ability of the user to interact with the application through events
+Reactivity -> being able to render data automatically without a manual refresh
+---> User interactivity enables a user perform any action when using the application ---> e.g. click, scroll, submit forms , hover , copy & paste
+
+Goal : provide a user with a form to fill(basic salary & benefits) submit the form to JS for processing & computation output tax values in a table
+
+event -> anything a user is able to do when using an application
+
+link the form to the js program
+
+id attribute -> the attribute that JS uses to uniquely identify and target a HTML element document.getElementById() -> method / function that is used by JS to target an element its unique id attribute
+
+addEventListener() -> a function that listens for an event as a user uses an application
+
+document.getElementByID().value -> used to extract /target form elements specifically -> we will use it to extract values filled in the form document.getElementByID().innerHTML -> used to target all other HTML elements except form elements -> we use to extract or output values in all html elements except form elements
+
+N/B -> After an event occurs e.g submit , the default behaviour of the browser is to refresh -> to prevent the default behaviour of the browser (refreshing) after an event occurs we use event.preventDefault()
+
+Deploying our project -> The project is meant to be deployed in Netlify (paas)
+
+cloud service models -> How cloud services and resources are delivered to an enduser
+
+IAAS -> Infrastructure as a service -> Actual purchase of real computing resources -> rent servers and manage compute on our own -> This needs specialized skills (DevOps) -> usually done by developers -> planning --> design ---> build ---> test ---> deploy ---> maintain PAAS --> Platform as a service ---> allows developers to build and deploy applications without having to manage infrastructure -> use existing easy to use platforms to deploy applications e.g netlify , heroku , vercel SAAS ----> softwware as a service ---> ready to use applications that are deployed on the cloud --> e.g. Google drive , Icloud , Netflix
+
+TASK 1.Ensure your tax project has all fields working i.e. you can output all tax categories in the table 2.Style it properly with CSS --> have modern responsive designs --> have a good navbar and footer --> --> give your application a unique name 3.Add context to your application e.g. how is NSSF, NHIF, NHDF, Payee etc calculated 4.Deploy your application to Netlify and share link in the group
